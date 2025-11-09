@@ -1,0 +1,179 @@
+Build a fully functional, modern, responsive, bilingual web app called "نماء" (Namaa) for tracking personal faith, study, and productivity. Use React, Tailwind CSS, HTML, and JavaScript, and store all data in Local Storage.
+
+Design & Theme:
+
+White & gold theme (elegant, modern, clean)
+
+Rounded cards, soft shadows, smooth animations
+
+Minimal subtle football ⚽ elements (small icons, optional animations)
+
+Dark/Light mode toggle
+
+Intro animation when opening the website (full-screen animation or logo animation)
+
+Fully responsive for desktop and mobile
+
+Proper Arabic (rtl) and English (ltr) support with language toggle in header/settings
+
+Home Dashboard ("My Day"):
+
+Auto-updating today’s date
+
+Daily greeting: "Good morning, Omar!" / "صباح الخير يا عمر!"
+
+Editable daily intention / goal
+
+Daily progress bars showing % completion of Tasks, Prayers, Quran, Lessons
+
+Daily motivational quote (faith + productivity)
+
+Daily Quranic verse inspiration
+
+Optional: micro-productivity tips / reminders daily (e.g., “Focus 25 min without distraction”)
+
+Task Management:
+
+Add/Edit/Delete tasks
+
+Checkbox animations (minimal ⚽ effect)
+
+Filters: Today / This Week
+
+Progress bar updates automatically
+
+Greeting: "Welcome to your tasks, Omar!" / "مرحبًا بك في مهامك يا عمر!"
+
+Productivity enhancement: priority flags, Pomodoro timer reminders, daily micro-challenges
+
+Prayer Tracker:
+
+Track 5 daily prayers: Fajr, Dhuhr, Asr, Maghrib, Isha
+
+Checkbox for each prayer
+
+End-of-day messages:
+
+Perfect: "Perfect match, Omar! All prayers done 🏆" / "مبارك يا عمر! أكملت كل الصلوات 🏆"
+
+Otherwise: encouraging message
+
+Greeting: "Time for your prayers, Omar!" / "حان وقت صلاتك يا عمر!"
+
+Quran Tracker:
+
+Track 5 pages daily (35 pages weekly)
+
+Checkbox for each page
+
+Completion messages:
+
+EN: "Nice goal, Omar! Quran round completed 🌙"
+
+AR: "عمل رائع يا عمر! أكملت وردك اليومي 🌙"
+
+Weekly progress view
+
+Greeting: "Keep up your Quran reading, Omar!" / "واصل قراءة القرآن يا عمر!"
+
+Lessons Tracker:
+
+Weekly view: Saturday → Friday
+
+Each day includes 5 metrics:
+
+Focus (1–5 stars)
+
+Interaction (Yes/No)
+
+Homework (Yes/No)
+
+Mistake Reduction (Yes/No)
+
+Respect & Discipline (Yes/No)
+
+Additional feature: Ability to add daily tasks linked to lessons
+
+Weekly averages & improvement summaries
+
+Greeting: "Ready to learn, Omar?" / "هل أنت مستعد للدراسة يا عمر؟"
+
+Weekly Overview:
+
+Shows daily summaries for all categories
+
+Auto-reset weekly
+
+Accessible history section
+
+Weekly report: Highlights what’s missing / incomplete, gives motivational message
+
+Greeting: "Here’s your week at a glance, Omar!" / "إليك نظرة عامة على أسبوعك يا عمر!"
+
+Motivation Page:
+
+Random faith + productivity + subtle football quotes (bilingual)
+
+Ability to add custom motivational quotes
+
+Optional: daily micro-challenges for extra productivity
+
+Greeting: "Your daily motivation, Omar!" / "تحفيزك اليومي يا عمر!"
+
+Settings Page:
+
+Dark/Light mode toggle
+
+Language switch (Arabic / English)
+
+Customize user name (default = Omar)
+
+Font size control
+
+Reset all data
+
+Greeting: "Welcome to settings, Omar!" / "مرحبًا بك في الإعدادات يا عمر!"
+
+Alarm / Reminder System (New Feature):
+
+Visual UI: small card / modal in Dashboard or Tasks page
+
+Users can set reminders / alarms for:
+
+Tasks
+
+Prayers
+
+Lessons
+
+Features:
+
+Time picker
+
+On/Off toggle
+
+Browser notification when reminder time arrives
+
+Subtle sound or visual cue for alert
+
+Display upcoming reminders on Dashboard
+
+Optional: Repeat daily / weekly
+
+Technical Notes:
+
+All data stored in Local Storage
+
+Auto-refresh date daily
+
+Smooth animations: checkmarks, progress bars, task completion
+
+Intro animation on first load
+
+Proper Arabic RTL layout
+
+Subtle football icons only, not dominant
+
+Productivity enhancements: daily micro-tips, Pomodoro/focus timers, priority labels, reminders
+
+Deliver a modern, elegant, motivational, spiritual, and productive web app that inspires Omar to track and improve daily habits, lessons, prayers, Quran reading, tasks, and productivity in both Arabic and English, preserving the original elegant UI/UX design, now including a fully integrated alarm/reminder system.
