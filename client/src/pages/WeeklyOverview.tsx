@@ -7,16 +7,29 @@ import { format, startOfWeek, addDays } from "date-fns";
 import { useTasks } from "@/hooks/useTasks";
 import { prayerNames } from "@shared/schema";
 import type { DailyPrayers, DailyQuran, WeeklyLessons } from "@shared/schema";
+import { useState, useEffect } from "react";
 
 export default function WeeklyOverview() {
   const { settings } = useSettings();
   const t = (key: keyof typeof translations.en) => translations[settings.language][key];
   const { tasks } = useTasks();
 
+  // Force re-render when localStorage updates
+  const [updateTrigger, setUpdateTrigger] = useState(0);
+
+  useEffect(() => {
+    const handleStorageUpdate = () => {
+      setUpdateTrigger(prev => prev + 1);
+    };
+
+    window.addEventListener('localStorage-update' as any, handleStorageUpdate);
+    return () => window.removeEventListener('localStorage-update' as any, handleStorageUpdate);
+  }, []);
+
   const weekStart = startOfWeek(new Date(), { weekStartsOn: 6 });
   const weekDays = Array.from({ length: 7 }, (_, i) => addDays(weekStart, i));
 
-  // Calculate weekly stats
+  // Calculate weekly stats (will re-run when updateTrigger changes)
   let completedTasks = 0, totalTasks = 0;
   let totalPrayers = 0, completedPrayers = 0;
   let totalQuranPages = 0, completedQuranPages = 0;
